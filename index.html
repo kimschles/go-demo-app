@@ -1,0 +1,8 @@
+<h1>{{.PageTitle}}</h1>
+<ul>
+    {{range .Gifs}}
+        <h2>{{.Title}}</h2>
+        <p><iframe src={{.URL}} width="480" height="360" frameBorder="0" allowFullScreen></iframe></p>
+        <sup>{{.Description}}</sup>
+    {{end}}
+</ul>
